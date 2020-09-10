@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbar_color">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/incone"
+                android:textStyle="bold"
+                android:textColor="@color/tittel_coloer"
+                android:layout_centerInParent="true"
+                android:textSize="18sp"/>
+            <Button
+                android:id="@+id/BackBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#006200EE"
+               android:drawableLeft="@drawable/ic_keyboard_backspace_black_24dp"
+                android:drawableStart="@drawable/ic_keyboard_backspace_black_24dp" />
+            <Button
+                android:id="@+id/moreBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#006200EE"
+                android:layout_alignParentRight="true"
+                android:drawableRight="@drawable/ic_more_vert_black_24dp"
+                android:layout_alignParentEnd="true"
+                android:drawableEnd="@drawable/ic_more_vert_black_24dp" />
+
+
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/infoCv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:orientation="vertical"
+            android:background="@color/output_background_color"
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                >
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Date"
+                    android:textColorHint="#FFFFFF"
+                    android:background="@color/toolbar_color"
+                    android:inputType="date"
+                    android:gravity="center"/>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                >
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Contents"
+                    android:textColorHint="#FFFFFF"
+                    android:background="@color/toolbar_color"
+                    android:gravity="center"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_margin="10dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                >
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Amount"
+                    android:textColorHint="#FFFFFF"
+                    android:background="@color/toolbar_color"
+                    android:inputType="number"
+                    android:digits="1234567890.$"
+                    android:gravity="center"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+       android:layout_below="@+id/infoCv"
+        android:layout_margin="15dp"
+        android:layout_alignEnd="@id/infoCv"
+        android:text="SAVE"
+        android:textColor="@color/currentBalance_out_color"
+        android:background="#4CAF50"
+        android:layout_alignRight="@id/infoCv" />
+
+
+</RelativeLayout>

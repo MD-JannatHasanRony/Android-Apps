@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="toolbar_color">#74000000</color>
+    <color name="tittel_coloer">#FFFFFF</color>
+    <color name="output_background_color">#1D000000</color>
+    <color name="Income_out_color">#FFFFFF</color>
+    <color name="currentBalance_out_color">#FFFFFF</color>
+    <color name="outTextViewColor">#000000</color>
+    <color name="HintColor">#000000</color>
+</resources>
